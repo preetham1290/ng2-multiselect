@@ -1,4 +1,4 @@
 export * from './dropdown/types';
-export * from './dropdown/search-filter.pipe';
-export * from './dropdown/dropdown.module';
-export * from './dropdown/dropdown.component';
+export { MultiSelectSearchFilter } from './dropdown/search-filter.pipe';
+export { MultiselectDropdownModule } from './dropdown/dropdown.module';
+export { MultiselectDropdown } from './dropdown/dropdown.component';

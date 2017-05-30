@@ -1,6 +1,8 @@
 The whole project is heavily inspired by [Simon Lindh](https://github.com/softsimon/angular-2-dropdown-multiselect)
 Also removed parent grouping options. As that was not needed.
 
+Also yet to complete readme file
+
 # AngularX Dropdown Multiselect for Bootstrap CSS
 
 Works with Angular Final and AOT compilation
