@@ -1,6 +1,6 @@
 {
 	"name": "ng2-multiselect",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "wrapper for stomp client in angular 2",
 	"main": "bundles/ng2-multiselect.umd.min.js",
 	"module": "index.js",
