@@ -240,8 +240,12 @@ var MultiselectDropdown = (function () {
     };
     MultiselectDropdown.prototype.checkAll = function () {
         this.model = [];
-        var checkedOptions = (!this.searchFilterApplied() ? this.options : this.model);
-        this.model = this.model.concat(checkedOptions);
+        //TODO: select only filtered options if searchFilterApplied
+        var checkedOptions = (!this.searchFilterApplied() ? this.options : this.options);
+        for (var _i = 0, _a = this.options; _i < _a.length; _i++) {
+            var option = _a[_i];
+            this.model.push(this.getKeyValue(option));
+        }
         this.onModelChange(this.model);
         this.onModelTouched();
     };

@@ -314,8 +314,11 @@ export class MultiselectDropdown implements OnInit, OnChanges, DoCheck, ControlV
 
   checkAll() {
     this.model = [];
-    let checkedOptions = (!this.searchFilterApplied() ? this.options : this.model);
-    this.model = this.model.concat(checkedOptions);
+    //TODO: select only filtered options if searchFilterApplied
+    let checkedOptions = (!this.searchFilterApplied() ? this.options : this.options);
+    for (let option of this.options) {
+      this.model.push(this.getKeyValue(option));
+    }
     this.onModelChange(this.model);
     this.onModelTouched();
   }
